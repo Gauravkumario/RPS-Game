@@ -1,0 +1,87 @@
+*{
+	padding: 0;
+	margin: 0;
+	color: #ffffff;
+	font-family: 'VT323',monospace;
+	background-color: #000000;
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+	user-select: none;
+}
+
+header{
+	height: 5rem;
+	width:100%;
+	font-size:1rem;
+	padding: ;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#board{
+	height: 200px;
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.score_board{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.player{
+	height: 100px;
+	width:100px;
+	text-align: center;
+}
+#score-card{
+	height: 32px;
+	width:60%;
+	margin: auto;
+	font-size: 24px;
+	text-align: center;
+}
+
+#button{
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+button{
+	cursor:pointer;
+	border-style: none;
+}
+#foot{
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+#foot button{
+	color: #000000;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #66DE93;
+}
+footer a img{
+	right: 3rem;
+	bottom: 2rem;
+	position: fixed;
+}
+@media(max-width: 600px){
+	#close{
+		display: none;
+	}
+	#foot{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="rock.css">
+	<script src="rock.js" type="text/javascript"></script>
+	
+</head>
+<body>
+	<header>
+		<h1 id="h1">Rock Paper Scissors</h1>
+		<h3>The winner is first to 5 points</h3>
+	</header>
+
+	<section id="board">
+		<div class="player">
+			<h1>User</h1>
+			<div class="score_board">
+				<h3 >Score :</h3>
+				<span id="score_p"></span>
+				<script type="text/javascript">
+					document.getElementById('score_p').innerHTML = 0;
+				</script>
+			</div>
+			
+		</div>
+		<div class="player">
+			<h1>System</h1>
+			<div class="score_board">
+				<h3 >Score :</h3>
+				<span id="score_c"></span>
+				<script type="text/javascript">
+					document.getElementById('score_c').innerHTML = 0;
+				</script>
+			</div>
+			
+		</div>
+	</section>
+
+	<section id="score-card">
+		<p id="result"></p>
+	</section>
+
+	<section id="button">
+		<button type="button" onclick="myfunction0()"><img draggable="false" src="https://img.icons8.com/color/100/000000/scissors.png"  alt="scissor" /></button>
+		<button type="button" onclick="myfunction1()"><img draggable="false" src="https://img.icons8.com/emoji/100/000000/rock-emoji.png" alt="rock" /></button>
+		<button type="button" onclick="myfunction2()"><img draggable="false" src="https://img.icons8.com/color/100/000000/paper.png" alt="paper" /></button>
+	</section>
+	<section id="foot">
+		<button onclick="location.reload()">RESET</button>
+		<button id="close" onclick="window.close()" >CLOSE GAME</button>
+	</section>
+	<footer>
+		<a href="https://github.com/Gauravkumario/Rock-Paper-Scissors" target="_blank"><img src="images/git.png" draggable="false"></a>
+	</footer>
+</body>
+</html>
